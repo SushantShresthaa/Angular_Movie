@@ -1,0 +1,38 @@
+
+  
+    <div id="formbody" class="container">
+        <h1>Customer Record</h1>
+        <hr />
+        <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Name</th>
+                <th scope="col">Password</th>
+                <th scope="col">Address</th>
+                <th scope="col">Phone</th>
+                <th scope="col">DOB</th>
+                <th scope="col">Image</th>
+
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let response of data">
+                <td>{{response.id}}</td>
+                <td>{{response.name}}</td>
+                <td>{{response.password}}</td>
+                <td>{{response.address}}</td>
+                <td>{{response.phone}}</td>
+                <td>{{response.dob}}</td>
+                <td>
+                    <img src="{{response.image}}" style="height:100px;"/>&nbsp; &nbsp;
+                    <button  type="button" class="btn btn-danger" (click)="deleteUser(response.id);">Delete</button>
+                </td>
+              </tr>
+             
+            </tbody>
+          </table>
+          <a routerLink="">
+            <button type="button" class="btn btn-success">Back</button>
+        </a>
+    </div>

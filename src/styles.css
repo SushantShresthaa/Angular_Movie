@@ -1,0 +1,36 @@
+.tfooter {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(139 136 147);
+    color: white;
+    text-align: center;
+}
+#formbody{
+  background-color: lightblue;
+
+}
+.formContainer {
+  box-shadow : 4px 8px 16px #d7d7d7;
+  margin:20vh auto;
+  padding:20px;
+  border-radius:0px 0px 4px 4px;
+  }
+  input {
+  box-shadow:none !important;
+  outline:none;
+  }
+  #formHeading {
+  background:#63cd9c;
+  margin:-20px;
+  border-radius:4px 4px 0px 0px
+  }
+
+  #pageContent {
+    background : url('/assets/image.jpg');
+    background-size : cover;
+    background-position: center;
+    height:100vh;
+    width:100%;
+  }
